@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:pages="clr-namespace:RemoteXamarinApp" 
+           
+             mc:Ignorable="d"
+             x:Class="RemoteXamarinApp.MainPage">
+
+
+    <StackLayout>
+        <Label Text="Connect to Server"     
+           FontSize="Medium"    x:Name="lblTitle"
+           HorizontalOptions="Center" />
+        <Entry x:Name="IPAddress" Placeholder="IP Address"/>
+        <Entry x:Name="Port" Placeholder="Port Number" Text="2000"/>
+
+      
+
+        <Image  IsVisible="false" IsEnabled="False"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" 
+                   Margin="0,0,20,0"
+                   x:Name="imageControl">
+        </Image>
+        <!--<Button  IsVisible="false" IsEnabled="False" Text="Parar" BackgroundColor="Red"
+                    Clicked="Button_Clicked" />-->
+       
+        <Button x:Name="Connect" Font="Microsoft Sans Serif" Text="Conectar" Clicked="NavigateButton_OnClicked"  VerticalOptions="EndAndExpand" TextColor="Blue" BackgroundColor="LightGreen"/>
+    </StackLayout>
+  
+    <!--<Entry x:Name="IPAddress" Placeholder="IP Address"/>
+    <Entry x:Name="Port" Placeholder="Port Number" Text="2000"/>
+    <Button x:Name="Connect" Text="Connect" Clicked="NavigateButton_OnClicked"/>
+
+    <StackLayout BackgroundColor="White" Padding="60" VerticalOptions="Center">
+        <Button IsEnabled="False" Text="Return To Video" BackgroundColor="Blue" Clicked="NavigateButton_OnClicked">
+        </Button>
+        <Label Text="Mi IP Publica:"     
+           FontSize="Large" x:Name="lblIP"
+           HorizontalOptions="Center">
+        </Label>
+        <Label Text="Local IP:" FontSize="Large" HorizontalOptions="Center" x:Name="txtlocalIP"></Label>
+        --><!--<Shell.Resources>
+        <ResourceDictionary>
+            <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="Red" />
+                <Setter Property="Shell.ForegroundColor" Value="Red" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="95FFFFFF"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="Black"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="95FFFFFF"/>
+            
+            </Style>
+
+
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+        </Shell.Resources>
+
+
+
+
+      
+
+    <FlyoutItem Title="Ver" Icon="stream.jpg">
+
+        <ShellContent ContentTemplate="{DataTemplate pages:PlayerPage}"/>
+
+
+        <Tab Title="Conectar"  Icon="stream.jpg" Style="{StaticResource BaseStyle}">
+            <ShellContent ContentTemplate="{DataTemplate pages:PlayerPage}"/>
+        </Tab>
+
+       
+
+    </FlyoutItem>
+
+
+    <TabBar>
+        <Tab Title="Conectar"  Icon="stream.jpg" IsEnabled="True">
+            <ShellContent ContentTemplate="{DataTemplate pages:PlayerPage}"/>
+        </Tab>
+    </TabBar>-->
+
+
+
+
+    <!--<StackLayout>
+        <Label Text="Connect to Server"     
+           FontSize="Medium"    
+           HorizontalOptions="Center" />
+
+
+        <Entry x:Name="IPAddress" Placeholder="IP Address"/>
+        <Entry x:Name="Port" Placeholder="Port Number" Text="2000"/>
+        <Button x:Name="Connect" Text="Connect" Clicked="NavigateButton_OnClicked"/>
+
+        <StackLayout BackgroundColor="White" Padding="60" VerticalOptions="Center">
+            <Button IsEnabled="False" Text="Return To Video" BackgroundColor="Blue" Clicked="NavigateButton_OnClicked">
+            </Button>
+            <Label Text="Mi IP Publica:"     
+           FontSize="Large" x:Name="lblIP"
+           HorizontalOptions="Center">
+            </Label>
+            <Label Text="Local IP:" FontSize="Large" HorizontalOptions="Center" x:Name="txtlocalIP"></Label>
+        </StackLayout>
+    </StackLayout>-->
+
+</ContentPage>
